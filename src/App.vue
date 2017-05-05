@@ -1,0 +1,69 @@
+<template>
+  <Pc>
+    <Header></Header>
+    <Content :height="1000">
+      <Sidebars :olist="olist" >
+      </Sidebars>
+      <SContent>
+        
+      </SContent>
+    </Content>
+  </Pc>
+</template>
+<style lang="scss">
+</style>
+
+<script >
+import Pc from '../components/pc/pc'
+  export default{
+    name:"App",
+    data(){
+      return{
+        bgColor:'green',
+        message:"dinglei",
+         olist:[
+          {
+            name:'fdfparent1',
+            children:[
+              {
+                name:'c11',
+                href:'www.baidu.com'
+              },
+              {
+                name:'c12',
+                href:'fjdkskfj'
+              }
+            ]
+          },{
+             name:'ppppparent2',
+             children:[
+              {
+                name:'c21',
+                href:'www.bdfdfdfaidu.com'
+              },
+              {
+                name:'c22',
+                href:'fjdfdkskfjd666'
+              }
+            ]
+          },{
+             name:'qqqparent2',
+             children:[
+              {
+                name:'c21',
+                href:'www.bdfdfdfaidu.com'
+              },
+              {
+                name:'c22',
+                href:'fjdfdkskfjd666'
+              }
+            ]
+          }
+        ]
+      }
+    },
+    created(){
+      console.log(Pc);
+    }
+  } 
+</script>
