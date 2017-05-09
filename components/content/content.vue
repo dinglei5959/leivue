@@ -11,7 +11,8 @@
       let scope = this;
       return{
         baseStyle:{
-          flex:'1 1 0'
+          flex:'1 1 0',
+          background:'#f2f2f2'
         }
       }
     },

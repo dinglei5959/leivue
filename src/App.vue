@@ -1,11 +1,13 @@
 <template>
   <Pc>
     <Header></Header>
-    <Content :height="1000">
+    <Content>
       <Sidebars :olist="olist" >
       </Sidebars>
-      <SContent>
-        
+      <SContent padding>
+         <router-view>
+           
+         </router-view>
       </SContent>
     </Content>
   </Pc>

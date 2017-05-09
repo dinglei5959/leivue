@@ -1,23 +1,37 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import App from './App.vue'
+import {routes} from './router'
 import Pc from '../components/pc/pc'
 
+import Page from '../components/page/page'
 import Header from '../components/header/header'
 import Content from '../components/content/content'
 import Sidebars from '../components/sidebars/sidebars'
 import SContent from '../components/sideContent/sideContent'
+import Grid from '../components/grid/grid'
+import Column from '../components/grid/column'
 
+Vue.use(VueRouter)
 Vue.component(App.name,App);
 Vue.component(Pc.name,Pc);
+Vue.component(Page.name,Page);
 
 Vue.component(Header.name,Header);
 Vue.component(Content.name,Content);
 Vue.component(Sidebars.name,Sidebars);
 Vue.component(SContent.name,SContent);
+Vue.component(Grid.name,Grid);
+Vue.component(Column.name,Column);
+
+
+
+
+const router = new VueRouter(routes)
 
 var vm = new Vue({
   el:"#app",
-  data:{
-  },
-  template:'<App/>'
+  router,
+  template:'<App/>',
+  components:{App}
 })

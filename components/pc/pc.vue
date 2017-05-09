@@ -7,6 +7,7 @@
 <style lang="scss">
   @import  '../../platform/theme/normalize.css';
   @import  '../../platform/theme/global.css';
+  @import '../../platform/theme/grid.css';
 </style>
 
 <script >
