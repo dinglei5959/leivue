@@ -1,0 +1,36 @@
+[gmiddle]{
+  justify-content: center;
+}
+
+[gcenter]{
+  align-items: center;
+}
+
+[gleft]{
+  justify-content: flex-start;
+}
+
+[gright]{
+  justify-content: flex-end;
+}
+
+
+[gtop]{
+  align-items: flex-start;
+}
+[gbottom]{
+  align-items: flex-end;
+}
+
+[gbetween]{
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+[garound]{
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}

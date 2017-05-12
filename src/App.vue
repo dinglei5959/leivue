@@ -25,11 +25,11 @@ import Pc from '../components/pc/pc'
         message:"dinglei",
          olist:[
           {
-            name:'fdfparent1',
+            name:'基础表单',
             children:[
               {
-                name:'c11',
-                href:'www.baidu.com'
+                name:'按钮',
+                href:'/button'
               },
               {
                 name:'c12',

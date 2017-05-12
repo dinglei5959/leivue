@@ -8,7 +8,8 @@
         <a href="#" class="lista" :style="[oborderBottom]" @click="childShow(index)">{{item.name}}<span class="spreadIcon">+</span></a>
         <ul v-if="item.children" >
           <li class="list" v-for="(citem,cindex) in item.children" :key="cindex">
-             <a href="#" class="lista child">{{citem.name}}</a>
+             <!-- <a href="#" class="lista child">{{citem.name}}</a> -->
+             <router-link class="lista child" :to="{path:citem.href}">{{citem.name}}</router-link>
            </li>
         </ul>
       </li>

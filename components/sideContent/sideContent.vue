@@ -9,17 +9,19 @@
     name:'SContent',
     props:{
       padding:{
-        type:Number,
-        default:0
+        type:String,
+        default:'0'
       }
     },
     computed:{
       Spadding(){
         let scope = this;
-        debugger
-        return {
-          padding:scope.padding + 'px'
+        let res = {
+          padding:"0px"
         }
+        if(scope.padding=="") res.padding = "20px";
+        else res.padding = scope.padding + "px";
+        return res;
       }
     }
   }
@@ -28,6 +30,8 @@
 <style lang="scss" scoped>
   .baseClass{
     flex:1 1 0;
+    height: inherit;
+    overflow-y: auto;
   }
 
 </style>

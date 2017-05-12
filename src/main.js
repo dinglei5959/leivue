@@ -11,6 +11,10 @@ import Sidebars from '../components/sidebars/sidebars'
 import SContent from '../components/sideContent/sideContent'
 import Grid from '../components/grid/grid'
 import Column from '../components/grid/column'
+import Row from '../components/grid/row'
+import Button from '../components/button/button'
+import ButtonGroup from '../components/button/buttonGroup'
+import Widget from '../components/widget/widget'
 
 Vue.use(VueRouter)
 Vue.component(App.name,App);
@@ -23,6 +27,10 @@ Vue.component(Sidebars.name,Sidebars);
 Vue.component(SContent.name,SContent);
 Vue.component(Grid.name,Grid);
 Vue.component(Column.name,Column);
+Vue.component(Row.name,Row);
+Vue.component(Button.name,Button);
+Vue.component(ButtonGroup.name,ButtonGroup);
+Vue.component(Widget.name,Widget);
 
 
 

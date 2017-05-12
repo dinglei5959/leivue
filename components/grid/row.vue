@@ -7,7 +7,7 @@
 <script>
   import mixin from './gmixin.js'
   export default{
-    name:'Column',
+    name:'Row',
     data(){
       return{
 
@@ -15,7 +15,7 @@
     },
     mixins: [mixin],
     created(){
-      this.$parent.setGridType('column');
+      this.$parent.setGridType('row');
     }
   }
 </script>

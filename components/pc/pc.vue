@@ -6,11 +6,12 @@
 
 <style lang="scss">
   @import  '../../platform/theme/normalize.css';
-  @import  '../../platform/theme/global.css';
+  @import  '../../platform/theme/global.scss';
   @import '../../platform/theme/grid.css';
 </style>
 
 <script >
+  //import '../../platform/utils/prettify.js'
   export default{
     name:"Pc",
     data(){
@@ -21,7 +22,9 @@
       }
     },
     created(){
-
+      //console.log(prettify)
+      //prettify();
+     // prettyPrint();
     }
   } 
 </script>
