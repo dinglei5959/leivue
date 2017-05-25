@@ -9,7 +9,7 @@ export default {
     type:{
       type:String,
       default(){
-        return 'item'
+        return ''
       }
     },
     offset:{
@@ -34,9 +34,11 @@ export default {
       res += !!type[0]?`flex-${type[0]}${!!scope.size?`-${scope.size}`:''} `:''
       res += !!type[1]?`flex-${type[1]}${!!scope.size?`-${scope.size}`:''} `:''
       res += !!type[2]?`flex-${type[2]}${!!scope.size?`-${scope.size}`:''} `:''
-      dtype.forEach(function(e,i){
-        res += ` flex-${e}`
-      })
+      if(scope.type.trim()!=""){
+        dtype.forEach(function(e,i){
+          res += ` flex-${e}`
+        })
+      }
       return res;
     },
     offSetSize(){

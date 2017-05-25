@@ -39,9 +39,11 @@
         let scope = this;
         let arr = scope.type.split(' ');
         let res = '';
-        arr.forEach(function(e,i){
-          res += ' flex-'+e; 
-        })
+        if(scope.type.trim()!=""){
+          arr.forEach(function(e,i){
+            res += ' flex-'+e; 
+          })
+        }
         return  res;
       }
     },

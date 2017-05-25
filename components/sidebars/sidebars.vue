@@ -5,7 +5,8 @@
     </div>
     <ul>
       <li class="list p" v-for="(item,index) in computedList" :key="index" :class="{active:(ulIndex==index)}">
-        <a href="#" class="lista" :style="[oborderBottom]" @click="childShow(index)">{{item.name}}<span class="spreadIcon">+</span></a>
+        <a href="javascript:" v-if="!item.href" class="lista" :style="[oborderBottom]" @click="childShow(index)">{{item.name}}<span class="spreadIcon">+</span></a>
+        <router-link v-else class="lista" :style="[oborderBottom]" @click.native="childShow(index)" :to="{path:item.href}">{{item.name}}</router-link>
         <ul v-if="item.children" >
           <li class="list" v-for="(citem,cindex) in item.children" :key="cindex">
              <!-- <a href="#" class="lista child">{{citem.name}}</a> -->

@@ -25,6 +25,14 @@ import Pc from '../components/pc/pc'
         message:"dinglei",
          olist:[
           {
+            name:'轮播',
+            href:'/lunbo'
+          },
+          {
+            name:'栅格',
+            href:"/grid"
+          },
+          {
             name:'基础表单',
             children:[
               {
@@ -37,23 +45,23 @@ import Pc from '../components/pc/pc'
               }
             ]
           },{
-             name:'ppppparent2',
+             name:'零配件',
              children:[
               {
-                name:'c21',
-                href:'www.bdfdfdfaidu.com'
+                name:'图标',
+                href:'/icon'
               },
               {
-                name:'c22',
-                href:'fjdfdkskfjd666'
+                name:'动画',
+                href:'/bounce'
               }
             ]
           },{
-             name:'qqqparent2',
+             name:'form',
              children:[
               {
-                name:'c21',
-                href:'www.bdfdfdfaidu.com'
+                name:'input',
+                href:'/input'
               },
               {
                 name:'c22',

@@ -15,6 +15,9 @@ import Row from '../components/grid/row'
 import Button from '../components/button/button'
 import ButtonGroup from '../components/button/buttonGroup'
 import Widget from '../components/widget/widget'
+import Icon from '../components/icon/icon'
+import Bounce from '../components/bounce/bounce'
+import Input from '../components/input/input'
 
 Vue.use(VueRouter)
 Vue.component(App.name,App);
@@ -31,6 +34,9 @@ Vue.component(Row.name,Row);
 Vue.component(Button.name,Button);
 Vue.component(ButtonGroup.name,ButtonGroup);
 Vue.component(Widget.name,Widget);
+Vue.component(Icon.name,Icon);
+Vue.component(Bounce.name,Bounce);
+Vue.component(Input.name,Input);
 
 
 

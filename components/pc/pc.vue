@@ -8,6 +8,7 @@
   @import  '../../platform/theme/normalize.css';
   @import  '../../platform/theme/global.scss';
   @import '../../platform/theme/grid.css';
+  @import '../../platform/theme/icon.css'
 </style>
 
 <script >

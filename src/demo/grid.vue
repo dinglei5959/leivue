@@ -252,61 +252,9 @@
 <script>
   //import './common/js/prettify.js'
   export default{
-    data(){
+    data() {
       return{
-        bgColor:'green',
-        message:"dinglei",
-        ColumnTemplate:`
-            <Grid>  \n\n\n    
-              <Column size="24">Column-24</Column>
-              <Column size="12">Column-12</Column>
-              <Column size="12">Column-12</Column>
-              <Column size="8">Column-8</Column>
-              <Column >Column 自动填充宽度</Column>
-              <Column size="8">Column-8</Column>
-              <Column size="8">Column-8</Column>
-              <Column size="8" offSet="8">Column-8</Column>
-            </Grid>
-        `,
-        olist:[
-          {
-            name:'fdfparent1',
-            children:[
-              {
-                name:'c11',
-                href:'www.baidu.com'
-              },
-              {
-                name:'c12',
-                href:'fjdkskfj'
-              }
-            ]
-          },{
-             name:'ppppparent2',
-             children:[
-              {
-                name:'c21',
-                href:'www.bdfdfdfaidu.com'
-              },
-              {
-                name:'c22',
-                href:'fjdfdkskfjd666'
-              }
-            ]
-          },{
-             name:'qqqparent2',
-             children:[
-              {
-                name:'c21',
-                href:'www.bdfdfdfaidu.com'
-              },
-              {
-                name:'c22',
-                href:'fjdfdkskfjd666'
-              }
-            ]
-          }
-        ]
+
       }
     }
   }
