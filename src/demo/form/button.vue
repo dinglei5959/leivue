@@ -63,14 +63,14 @@
 
 <script>
   export default{
-    data(){
-      return{
+    data () {
+      return {
 
       }
     },
-    methods:{
-      test(){
-        alert("意不意外，惊不惊喜！！");
+    methods: {
+      test () {
+        window.alert('意不意外，惊不惊喜！！')
       }
     }
   }

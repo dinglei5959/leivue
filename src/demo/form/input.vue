@@ -13,13 +13,25 @@
         <Row padding>
           <Input placeholder="input" type="input" icon="search"></Input>
         </Row>
+         <Row padding>
+          <Input placeholder="input" type="input">
+            <template slot="prepend">http://</template>
+          </Input>
+        </Row>
       </Grid>
     </Widget>
   </Page>
 </template>
 
 <script>
+  export default{
+    created () {
   
+    },
+    mounted () {
+  
+    }
+  }
 </script>
 
 <style lang="scss" scoped>

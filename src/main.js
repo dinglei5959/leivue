@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
-import {routes} from './router'
+import { routes } from './router'
 import Pc from '../components/pc/pc'
 
 import Page from '../components/page/page'
@@ -18,34 +18,33 @@ import Widget from '../components/widget/widget'
 import Icon from '../components/icon/icon'
 import Bounce from '../components/bounce/bounce'
 import Input from '../components/input/input'
+import Template from '../components/input/template'
 
 Vue.use(VueRouter)
-Vue.component(App.name,App);
-Vue.component(Pc.name,Pc);
-Vue.component(Page.name,Page);
+Vue.component(App.name, App)
+Vue.component(Pc.name, Pc)
+Vue.component(Page.name, Page)
 
-Vue.component(Header.name,Header);
-Vue.component(Content.name,Content);
-Vue.component(Sidebars.name,Sidebars);
-Vue.component(SContent.name,SContent);
-Vue.component(Grid.name,Grid);
-Vue.component(Column.name,Column);
-Vue.component(Row.name,Row);
-Vue.component(Button.name,Button);
-Vue.component(ButtonGroup.name,ButtonGroup);
-Vue.component(Widget.name,Widget);
-Vue.component(Icon.name,Icon);
-Vue.component(Bounce.name,Bounce);
-Vue.component(Input.name,Input);
-
-
-
+Vue.component(Header.name, Header)
+Vue.component(Content.name, Content)
+Vue.component(Sidebars.name, Sidebars)
+Vue.component(SContent.name, SContent)
+Vue.component(Grid.name, Grid)
+Vue.component(Column.name, Column)
+Vue.component(Row.name, Row)
+Vue.component(Button.name, Button)
+Vue.component(ButtonGroup.name, ButtonGroup)
+Vue.component(Widget.name, Widget)
+Vue.component(Icon.name, Icon)
+Vue.component(Bounce.name, Bounce)
+Vue.component(Input.name, Input)
+Vue.component(Template.name, Template)
 
 const router = new VueRouter(routes)
 
 var vm = new Vue({
-  el:"#app",
-  router,
-  template:'<App/>',
-  components:{App}
+    el: '#app',
+    router,
+    template: '<App/>',
+    components: { App }
 })

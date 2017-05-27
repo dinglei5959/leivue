@@ -12,20 +12,20 @@
 </style>
 
 <script >
-  //import '../../platform/utils/prettify.js'
+  // import '../../platform/utils/prettify.js'
   export default{
-    name:"Pc",
-    data(){
-      return{
-        baseStyle:{
-          flexDirection:'column'
+    name: 'Pc',
+    data () {
+      return {
+        baseStyle: {
+          flexDirection: 'column'
         }
       }
     },
-    created(){
-      //console.log(prettify)
-      //prettify();
+    created () {
+      // console.log(prettify)
+      // prettify();
      // prettyPrint();
     }
-  } 
+  }
 </script>

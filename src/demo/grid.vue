@@ -250,12 +250,15 @@
 </template>
 
 <script>
-  //import './common/js/prettify.js'
+  // import './common/js/prettify.js'
   export default{
-    data() {
-      return{
-
+    data () {
+      return {
+  
       }
+    },
+    methods: {
+  
     }
   }
 </script>

@@ -20,78 +20,77 @@
 
 <script>
   export default{
-    name:'Sidebars',
-    data(){
-      let scope = this;
-      let unit = scope.sizeUnit;
-      return{
-        baseStyle:{
-          height:'inherit',
-          flex:'0 0 '+scope.width+'px',
-          boxShadow:'8px 20px 20px 0px #333'
+    name: 'Sidebars',
+    data () {
+      let scope = this
+     // let unit = scope.sizeUnit
+      return {
+        baseStyle: {
+          height: 'inherit',
+          flex: '0 0 ' + scope.width + 'px',
+          boxShadow: '8px 20px 20px 0px #333'
         },
-        bgStyle:{
-          background:scope.sideStyle.bgColor
+        bgStyle: {
+          background: scope.sideStyle.bgColor
         },
-        oborderBottom:{
-          borderBottom:scope.sideStyle.liBottom
+        oborderBottom: {
+          borderBottom: scope.sideStyle.liBottom
         },
-        ulIndex:-1,
-        uolder:-1,
-        query:''
+        ulIndex: -1,
+        uolder: -1,
+        query: ''
       }
     },
-    props:{
-      height:{
-        type:Number,
-        default(){
-          return 800;
+    props: {
+      height: {
+        type: Number,
+        default () {
+          return 800
         }
       },
-      width:{
-        type:Number,
-        default(){
-          return 250;
+      width: {
+        type: Number,
+        default () {
+          return 250
         }
       },
-      sizeUnit:{
-        type:String,
-        default(){
-          return 'px';
+      sizeUnit: {
+        type: String,
+        default () {
+          return 'px'
         }
       },
-      olist:{
-        type:Array,
-        default(){
-          return [];
+      olist: {
+        type: Array,
+        default () {
+          return []
         }
       },
-      sideStyle:{
-        type:Object,
-        default(){
+      sideStyle: {
+        type: Object,
+        default () {
           return {
-            bgColor:'#ed5565',
-            liBottom:'solid 1px #DA4453'
-          };
+            bgColor: '#ed5565',
+            liBottom: 'solid 1px #DA4453'
+          }
         }
       }
     },
-    computed:{
-      computedList(){
-        var scope = this;
+    computed: {
+      computedList () {
+        var scope = this
         return this.olist.filter(function (item) {
           return item.name.toLowerCase().indexOf(scope.query.toLowerCase()) !== -1
         })
       }
     },
-    methods:{
-      childShow(i){
-        let scope = this;
-        if(i==scope.uolder){
-          scope.uolder = scope.ulIndex =-1;
-          
-        }else{
-          scope.uolder = scope.ulIndex = i;
+    methods: {
+      childShow (i) {
+        let scope = this
+        if (i === scope.uolder) {
+          scope.uolder = scope.ulIndex = -1
+        } else {
+          scope.uolder = scope.ulIndex = i
         }
       }
     }
