@@ -38,10 +38,6 @@ export default{
             {
               name: '按钮',
               href: '/button'
-            },
-            {
-              name: 'c12',
-              href: 'fjdkskfj'
             }
           ]
         }, {
@@ -68,8 +64,12 @@ export default{
               href: '/input'
             },
             {
-              name: 'c22',
-              href: 'fjdfdkskfjd666'
+              name: 'searchItem',
+              href: '/searchItem'
+            },
+            {
+              name: 'select',
+              href: '/select'
             }
           ]
         },

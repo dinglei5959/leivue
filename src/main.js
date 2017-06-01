@@ -19,6 +19,8 @@ import Icon from '../components/icon/icon'
 import Bounce from '../components/bounce/bounce'
 import Input from '../components/input/input'
 import Template from '../components/input/template'
+import searchItem from '../components/input/searchItem'
+import Select from '../components/select/select'
 
 Vue.use(VueRouter)
 Vue.component(App.name, App)
@@ -39,12 +41,14 @@ Vue.component(Icon.name, Icon)
 Vue.component(Bounce.name, Bounce)
 Vue.component(Input.name, Input)
 Vue.component(Template.name, Template)
+Vue.component(searchItem.name, searchItem)
+Vue.component(Select.name, Select)
 
 const router = new VueRouter(routes)
 
 var vm = new Vue({
-    el: '#app',
-    router,
-    template: '<App/>',
-    components: { App }
+  el: '#app',
+  router,
+  template: '<App/>',
+  components: { App }
 })

@@ -112,25 +112,25 @@
 
 <script>
   export default{
-    data:()=>({
-      lei1:true,
-      lei2:true,
-      lei3:true,
-      lei4:true,
-      lei5:true,
-      lei6:true,
-      lei7:true,
-      lei8:true
+    data: () => ({
+      lei1: true,
+      lei2: true,
+      lei3: true,
+      lei4: true,
+      lei5: true,
+      lei6: true,
+      lei7: true,
+      lei8: true
     }),
-    methods:{
-      fCtoT(type){
-        this["lei"+type] = this["lei"+type]?false:true;
+    methods: {
+      fCtoT (type) {
+        this['lei' + type] = !this["lei"+type];
       }
     },
-    created(){
-      this.lei8 = false;
-    },
-    mounted(){
+    created () {
+      this.lei8 = false
+  },
+    mounted () {
     }
   }
 </script>

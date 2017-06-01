@@ -11,6 +11,18 @@ const routes = {
       }
     },
     {
+      path: '/searchItem',
+      component (resolve) {
+        require(['@/demo/form/searchItem'], resolve)
+      }
+    },
+    {
+      path: '/select',
+      component (resolve) {
+        require(['@/demo/form/select'], resolve)
+      }
+    },
+    {
       path: '/grid',
       component (resolve) {
         require(['@/demo/grid'], resolve)

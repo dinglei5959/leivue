@@ -16,49 +16,59 @@
 </template>
 
 <script>
+  import {addClass, removeClass} from '../../platform/utils/dom.js'
   export default{
-    name:"Bounce",
-    props:{
-      name:{
-        type:String,
-        default(){
+    name: 'Bounce',
+    props: {
+      name: {
+        type: String,
+        default () {
           return ''
         }
       },
-      type:{
-        type:String,
-        default(){
+      type: {
+        type: String,
+        default () {
           return ''
         }
       }
     },
-    methods:{
-      beforeEnter(el){
-         el.className="collapse-transition"
-         el.style.height = "0px";
+    methods: {
+      beforeEnter (el) {
+        // el.className = 'collapse-transition'
+        addClass(el, 'collapse-transition')
+        el.style.height = '0px'
       },
-      enter(el,done){
-        el.style.height = el.scrollHeight + 'px';
+      enter (el, done) {
+        el.style.height = el.scrollHeight + 'px'
       },
-      afterEnter(el){
-        el.className=""
-        el.style.height = "auto"
+      afterEnter (el) {
+        // el.className = ''
+        removeClass(el, 'collapse-transition')
+        el.style.height = 'auto'
       },
-      beforeLeave(el){
-        el.className="collapse-transition"
-        el.style.height = el.scrollHeight + 'px';
+      beforeLeave (el) {
+       // el.className = 'collapse-transition'
+        addClass(el, 'collapse-transition')
+        el.style.height = el.scrollHeight + 'px'
       },
-      leave(el,done){
-        el.style.height = "0px";
+      leave (el, done) {
+        el.style.height = '0px'
+        el.addEventListener('webkitTransitionEnd', function () {
+          done()
+        })
       },
-      afterLeave(el){
-        el.className="";
-        el.style.height="auto"
+      afterLeave (el) {
+        // el.className = ''
+        removeClass(el, 'collapse-transition')
+        el.style.height = 'auto'
+        el.style.border = '0px'
+       // el.style.display = 'none'
       }
     },
-    created(){
-      let scope = this;
-      if(scope.type=="collapse"){
+    created () {
+      let scope = this
+      if (scope.type === 'collapse') {
       }
     }
   }
